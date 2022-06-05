@@ -34,10 +34,6 @@ function App() {
   const [data, setData] = useState(initData);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [genre,setName] = useState("");
-  const [content,setContent] = useState("");
-  const [image,setImage] = useState("");
-
   let handleAddItem = (item) => {
       setData([...data, item]);
   }
@@ -57,7 +53,7 @@ function App() {
           handleModalOpen={handleModalOpen}
           initData={initData}/>
         <ModalMovie 
-        handleModalOPen={handleModalOpen}
+        handleModalOpen={handleModalOpen}
         isModalOpen={isModalOpen}
         handleAddItem={handleAddItem}/>
         <MovieList initData={initData}/>

@@ -3,7 +3,6 @@ import { useState } from "react";
 export default function SideList( {isModalOpen, handleModalOpen, initData }){
 
     const [data] = useState(initData);
-    //console.log("isModalOpen in SideList : "+isModalOpen);
 
     return(
         <div className="sidebar">
