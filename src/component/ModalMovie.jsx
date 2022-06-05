@@ -8,13 +8,13 @@ export default function ModalMovie( {handleAddItem, isModalOpen, handleModalOpen
     function handleSubmit(e){
         e.preventDefault();
         handleAddItem({genre, content, image});
-        handleModalOpen(false);
+        handleModalOpen();
     }
 
     return(
         <div className="modal-background" hidden={!isModalOpen}>
         <form className="modal" onSubmit={handleSubmit}>
-            <span className="modal-close" onClick={()=> handleModalOpen(false)}>X</span>
+            <span className="modal-close" onClick={()=> handleModalOpen()}>X</span>
             <label htmlFor="genre" className="label">장르</label>
             <input id="genre" type="text" placeholder="SF" className="input" 
             value={genre} onChange={(e) => setName(e.target.value)} required/>

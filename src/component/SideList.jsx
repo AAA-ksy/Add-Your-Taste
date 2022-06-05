@@ -11,7 +11,7 @@ export default function SideList( {isModalOpen, handleModalOpen, initData }){
           <button
             type="button"
             className="add-button"
-            onClick={() => handleModalOpen(true)}
+            onClick={() => handleModalOpen()}
           >
             추가
           </button>

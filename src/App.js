@@ -43,7 +43,7 @@ function App() {
   }
 
   let handleModalOpen = () => {
-      setIsModalOpen(value);
+      setIsModalOpen(!isModalOpen);
   };
 
   return (
