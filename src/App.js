@@ -42,7 +42,7 @@ function App() {
       setData([...data, item]);
   }
 
-  let handleModalOpen = (value) => {
+  let handleModalOpen = () => {
       setIsModalOpen(value);
   };
 
