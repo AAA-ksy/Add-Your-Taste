@@ -46,6 +46,8 @@ function App() {
       setIsModalOpen(!isModalOpen);
   };
 
+   console.log("isModalOpen in App.js : "+isModalOpen);
+
   return (
     <>
         <Header />
@@ -54,12 +56,11 @@ function App() {
           isModalOpen={isModalOpen}
           handleModalOpen={handleModalOpen}
           initData={initData}/>
-        <ModalMovie initData={initData}/>
-        <MovieList 
-          handleAddItem={handleAddItem}
-          isModalOpen={isModalOpen}
-          handleModalOpen={handleModalOpen}
-          initData={initData}/>
+        <ModalMovie 
+        handleModalOPen={handleModalOpen}
+        isModalOpen={isModalOpen}
+        handleAddItem={handleAddItem}/>
+        <MovieList initData={initData}/>
     </main>
     </>
   );
