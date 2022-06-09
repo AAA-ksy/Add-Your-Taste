@@ -35,7 +35,9 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   let handleAddItem = (item) => {
+      console.log("item in App.js : "+item);
       setData([...data, item]);
+      console.log("data after handleAddItem : "+data);
   }
 
   let handleModalOpen = () => {
@@ -56,7 +58,7 @@ function App() {
         handleModalOpen={handleModalOpen}
         isModalOpen={isModalOpen}
         handleAddItem={handleAddItem}/>
-        <MovieList initData={initData}/>
+        <MovieList data={initData}/>
     </main>
     </>
   );

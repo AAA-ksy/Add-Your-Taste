@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-export default function MovieList( {initData} ){
-
-    const [data] = useState(initData);
+export default function MovieList( {data} ){
 
     return(
         <section className="container">

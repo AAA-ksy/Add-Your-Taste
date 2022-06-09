@@ -9,6 +9,7 @@ export default function ModalMovie( {handleAddItem, isModalOpen, handleModalOpen
         e.preventDefault();
         handleAddItem({genre, content, image});
         handleModalOpen();
+        console.log("genre:"+genre+", content:"+content+", image:"+image);
     }
 
     return(
