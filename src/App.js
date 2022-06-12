@@ -51,14 +51,13 @@ function App() {
         <Header />
     <main>
         <SideList 
-          isModalOpen={isModalOpen}
           handleModalOpen={handleModalOpen}
-          initData={initData}/>
+          data={data}/>
         <ModalMovie 
         handleModalOpen={handleModalOpen}
         isModalOpen={isModalOpen}
         handleAddItem={handleAddItem}/>
-        <MovieList data={initData}/>
+        <MovieList data={data}/>
     </main>
     </>
   );
