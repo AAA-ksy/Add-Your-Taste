@@ -51,7 +51,6 @@ function App() {
         <Header />
     <main>
         <SideList 
-          isModalOpen={isModalOpen}
           handleModalOpen={handleModalOpen}
           data={data}/>
         <ModalMovie 

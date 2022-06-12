@@ -1,4 +1,4 @@
-export default function SideList({ isModalOpen, handleModalOpen, data }) {
+export default function SideList({ handleModalOpen, data }) {
   
     return(
         <div className="sidebar">
