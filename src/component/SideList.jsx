@@ -1,9 +1,5 @@
-import { useState } from "react";
-
-export default function SideList( {isModalOpen, handleModalOpen, initData }){
-
-    const [data] = useState(initData);
-
+export default function SideList({ isModalOpen, handleModalOpen, data }) {
+  
     return(
         <div className="sidebar">
           <button
